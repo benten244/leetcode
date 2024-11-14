@@ -9,38 +9,66 @@ end
 
 def merge_two_lists(list1, list2)
 
+  number_box = []
+  @list1_arr = []
+  @list2_arr = []
+
   return [] if (list1.nil?) && (list2.nil?)
-  if (list1.nil?) || (list2.nil?)
-      list1.val
+
+  if (list1.nil? || list2.nil?)
+      p list1
+      p list2
+
+     while !list1.nil?
+          x = list1.val
+          @list1_arr << x
+          list1 = list1.next
+     end
+
+      while !list2.nil?
+          x = list2.val
+          @list2_arr << x
+          list2 = list2.next
+      end
   end
 
-  number_box = []
+  number_box = @list1_arr if !@list1_arr.empty?
+  number_box = @list2_arr if !@list2_arr.empty?
 
-  a_arr = [1,2,4]
-  b_arr = [1,3,4]
+
+  while !list1.nil? && !list2.nil?
+      x = list1.val
+      y = list2.val
+
+      @list1_arr << x
+      @list2_arr << y
+
+      list1 = list1.next
+      list2 = list2.next
+  end
+
+  a_arr = @list1_arr
+  b_arr = @list2_arr
 
   a = a_arr.count
   b = b_arr.count
+
   maximum = [a, b].max
 
   i = 0
 
-  maximum.times do
+  if (a_arr.count > 0 && b_arr.count > 0)
+      maximum.times do
+          min = [a_arr[i], b_arr[i]].min
+          max = [a_arr[i], b_arr[i]].max
 
-      # min = [a[i], b[i]].min
-      # max = [a[i], b[i]].max
-      a = a_arr[i]
-      b = b_arr[i]
+          number_box << min
+          number_box << max
 
-      number_box << a
-      number_box << b
-
-      i += 1
+          i += 1
+      end
+      number_box
   end
 
-  p a_arr
-  p b_arr
-
   number_box
-
 end
