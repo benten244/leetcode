@@ -8,6 +8,8 @@
 # end
 # @param {ListNode} head
 # @return {ListNode}
+
+# 1st solution
 def delete_duplicates(head)
 
   array = []
@@ -23,4 +25,22 @@ def delete_duplicates(head)
   end
 
   array
+end
+
+# 2nd solution
+def delete_duplicates(head)
+
+  current = head
+
+  return head if head.nil? || head.next.nil?
+
+  while current && current.next
+    if current.val == current.next.val
+      current.next = current.next.next
+    else
+      current = current.next
+    end
+  end
+
+  head
 end
