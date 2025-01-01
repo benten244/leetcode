@@ -45,3 +45,30 @@ def get_row(row_index)
 
   result
 end
+
+
+### クリア度、他の人のコードを参考にリファクタリング
+
+
+### リファクタリング後のコード
+
+def get_row(row_index)
+
+  current_row = [1] ##初期化
+
+  row_index.times do
+    next_row = [1]
+
+    # current_row = [1, 2, 1]
+
+    # 現在の行（current_row）の隣接する2つの要素を合計して、新しい行（next_row）に追加している
+    (0...(current_row.size - 1)).each do |i|
+      next_row << current_row[i] + current_row[i + 1]
+    end
+
+    # 新しい行（next_row）の最後に1を追加して、新しい行（next_row）を現在の行（current_row）に更新している
+    next_row << 1
+    current_row = next_row
+  end
+  current_row
+end
