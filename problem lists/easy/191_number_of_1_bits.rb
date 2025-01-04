@@ -21,3 +21,17 @@ def transfer_binary(n)
 
   binary_arr
 end
+
+
+## 別解
+
+def hamming_weight(n)
+  result = 0
+
+  while n > 0
+    result += n % 2 # 余りを足す
+    n /= 2
+  end
+
+  result
+end
