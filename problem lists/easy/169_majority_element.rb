@@ -21,3 +21,18 @@ def majority_element(nums)
 
   answer
 end
+
+### 別解
+
+# @param {Integer[]} nums
+# @return {Integer}
+def majority_element(nums)
+  majority_criteria = nums.length / 2
+
+  hash = Hash.new(0)
+
+  nums.each do |num|
+    hash[num] += 1 # {3=>1}
+    return num if hash[num] > majority_criteria
+  end
+end
