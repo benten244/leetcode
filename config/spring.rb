@@ -1,3 +1,4 @@
+require "pry"
 %w[
   .ruby-version
   .rbenv-vars

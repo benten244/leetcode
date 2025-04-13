@@ -1,3 +1,4 @@
+require "pry"
 def sorted_array_to_bst(nums)
   return nil if nums.empty?
 

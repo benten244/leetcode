@@ -1,3 +1,4 @@
+require "pry"
 def length_of_longest_substring(s)
   return 0 if s.empty?
   return 1 if s == " "

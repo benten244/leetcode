@@ -1,3 +1,4 @@
+require "pry"
 a, b = gets.split.map(&:to_i)
 numbers = (a..b).to_a
 

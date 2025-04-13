@@ -1,3 +1,4 @@
+require "pry"
 # @param {String} s
 # @return {Integer}
 

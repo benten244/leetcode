@@ -1,3 +1,4 @@
+require "pry"
 module ApplicationCable
   class Channel < ActionCable::Channel::Base
   end

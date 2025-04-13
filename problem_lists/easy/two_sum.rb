@@ -1,3 +1,4 @@
+require "pry"
 def two_sum(nums, target)
   num_hash = {}
 

@@ -1,3 +1,4 @@
+require "pry"
 # @param {String} haystack
 # @param {String} needle
 # @return {Integer}

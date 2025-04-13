@@ -1,3 +1,4 @@
+require "pry"
 module ApplicationCable
   class Connection < ActionCable::Connection::Base
   end

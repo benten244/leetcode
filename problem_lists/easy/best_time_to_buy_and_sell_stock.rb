@@ -1,3 +1,4 @@
+require "pry"
 # @param {Integer[]} prices
 # @return {Integer}
 

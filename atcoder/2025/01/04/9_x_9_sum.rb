@@ -1,3 +1,4 @@
+require "pry"
 n = gets.to_i
 
 vertical_arr = (1..9).to_a

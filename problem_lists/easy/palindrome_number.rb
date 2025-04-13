@@ -1,3 +1,4 @@
+require "pry"
 # @param {Integer} x
 # @return {Boolean}
 def is_palindrome(num)

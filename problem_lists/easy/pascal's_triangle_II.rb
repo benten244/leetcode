@@ -1,3 +1,4 @@
+require "pry"
 # @param {Integer} row_index
 # @return {Integer[]}
 

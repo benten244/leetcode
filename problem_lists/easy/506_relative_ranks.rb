@@ -1,3 +1,4 @@
+require "pry"
 def find_relative_ranks(score)
   reverse_score = score.sort {|a, b| b <=> a}
   place         = 1

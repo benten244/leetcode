@@ -1,3 +1,4 @@
+require "pry"
 # @param {Integer[]} nums1
 # @param {Integer} m
 # @param {Integer[]} nums2
