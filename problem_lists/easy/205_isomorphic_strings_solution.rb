@@ -10,16 +10,24 @@ def is_isomorphic(s, t)
 end
 
 def save_string_hash(string, hash)
-  string.chars.each do |s|
-    if hash[s].positive?
-      hash[s] += 1
-    else
-      hash[s] = 0
+  index = 0
+
+  string.chars.each do |char|
+    binding.pry
+    if !hash.key?(char)
+      hash[char] = index
+      index += 1
     end
   end
-  hash
-end
 
+  pattern = []
+
+  string.chars.each do |char|
+    pattern << hash[char]
+  end
+
+  pattern
+end
 
 s = "egg"
 t = "add"
