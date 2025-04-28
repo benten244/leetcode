@@ -1,16 +1,17 @@
 require 'pry'
-require_relative './350_intersection_of_two_arrays_ll'
+require_relative './1941_check_if_all_characters_have_equal_number_of_occurrences'
 
 module HashMap
   class RubyRunnner
 
-    def execute(a, b)
-      HashMap::IntersectionService.intersection(a, b)
+    def execute(s)
+      binding.pry
+      HashMap::JudgeGoodStringService.are_occurrences_equal(s)
     end
 
   end
 end
 
-a = [1,2,2,1]
-b = [2,2]
-runner = HashMap::RubyRunnner.new.execute(a, b) if __FILE__ == $0
+s = 'abcabc'
+
+HashMap::RubyRunnner.new.execute(s) if __FILE__ == $0
