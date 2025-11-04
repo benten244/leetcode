@@ -21,3 +21,9 @@ module HashMap
   end
 
 end
+
+
+
+class Test
+   fluits = []
+end
