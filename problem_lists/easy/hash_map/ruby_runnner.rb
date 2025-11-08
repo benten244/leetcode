@@ -1,16 +1,17 @@
 require 'pry'
-require_relative './2006_count_number_of_pairs_with_absolute_difference_k'
+require_relative '496_next_greater_element_I'
 
 module HashMap
   class RubyRunnner
 
-    def execute(nums, s)
-      HashMap::CountSpecialQuardrupletsService.count_quadruplets(nums)
+    def execute(nums1, nums2)
+      result = HashMap::NextGreaterElementI.next_greater_element(nums1, nums2)
+      p result
     end
 
   end
 end
 
-nums = [1,2,3,6]
-
-HashMap::RubyRunnner.new.execute(nums, k) if __FILE__ == $0
+nums1 = [4,1,2]
+nums2 = [1,3,4,2]
+HashMap::RubyRunnner.new.execute(nums1, nums2) if __FILE__ == $0
