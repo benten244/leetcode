@@ -9,10 +9,10 @@ end
 # ===============================
 # 設定エリア
 # ===============================
-FILE_PATH  = '3234_count_the_number_of_substrings_with_dominant_ones'.freeze
+FILE_PATH  = '705_design_hashset'.freeze
 require_relative FILE_PATH
 METHOD_NAME = :number_of_substrings
-NAMESPACE  = Medium
+NAMESPACE  = HashPractice
 # ===============================
 
 class RubyRunner
