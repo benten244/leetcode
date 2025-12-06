@@ -1,4 +1,5 @@
 # 705. Design HashSet
+require "pry"
 
 module HashPractice
   class DesignHashset
