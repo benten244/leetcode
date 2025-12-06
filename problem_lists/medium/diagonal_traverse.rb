@@ -29,7 +29,7 @@ module Medium
 
             change_vector_to_down!
            # もしダウナーで、最左なら
-          elsif is_downer_vector? && is_most_left?
+          elsif is_dowNAMESPACE  = HashPracticener_vector? && is_most_left?
             insert!(mat)
             slide_to_right!
             change_vector_to_up!
