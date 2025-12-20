@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-raw_title = ARGV[0] or abort "Usage: new_lc '1234. Problem Title...'"
+raw_title = ARGV[0] or abort "Usage: new_lc '1925. Count Square Sum Triples'"
 
 title = raw_title.dup
 
