@@ -12,11 +12,11 @@ end
 # ===============================
 # FILE_PATH: problem_lists/easy 配下の .rb ファイルのパス（絶対 or 相対）
 # 例: '/Users/t.umemura/leetcode/problem_lists/easy/two_sum.rb'
-FILE_PATH   = 'problem_lists/easy/944_delete_columns_to_make_sorted.rb'.freeze
+FILE_PATH   = 'problem_lists/easy/1002_find_common_characters.rb'.freeze
 METHOD_NAME = :solve
 NAMESPACE   = nil
 OPTIONS     = {
-  strs: ["abc", "bce", "cae"]
+  words: ["bella","label","roller"]
 }
 # ===============================
 

@@ -1,4 +1,4 @@
-require 'pry-byebug'
+require 'pry'
 
 def class_name_from_file(file_path)
   base = File.basename(file_path, '.rb')
@@ -9,10 +9,10 @@ end
 # ===============================
 # 設定エリア
 # ===============================
-FILE_PATH  = '229_majority_element_ii'.freeze
-require_relative "../#{FILE_PATH}"
+FILE_PATH  = ''.freeze
+require_relative FILE_PATH
 METHOD_NAME = :solve
-NAMESPACE  = Medium
+NAMESPACE  = Hard
 # ===============================
 
 class RubyRunner
@@ -23,7 +23,7 @@ class RubyRunner
   end
 
   def execute(**options)
-    require_relative "../#{@file_path}"
+    require_relative @file_path
 
     klass_name = class_name_from_file(@file_path)
     service    = @namespace.const_get(klass_name)
@@ -44,7 +44,6 @@ class RubyRunner
 end
 
 options = {
-  nums: [3,2,3]
 }
 
 if __FILE__ == $0
