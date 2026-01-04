@@ -9,7 +9,7 @@ end
 # ===============================
 # 設定エリア
 # ===============================
-FILE_PATH  = '229_majority_element_ii'.freeze
+FILE_PATH  = '1390_four_divisors'.freeze
 require_relative "../#{FILE_PATH}"
 METHOD_NAME = :solve
 NAMESPACE  = Medium
@@ -44,7 +44,7 @@ class RubyRunner
 end
 
 options = {
-  nums: [3,2,3]
+  nums: [21,4,7]
 }
 
 if __FILE__ == $0
